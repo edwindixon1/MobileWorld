@@ -1,6 +1,6 @@
 package Test;
 
-// import java.util.concurrent.TimeUnit;
+
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -22,7 +22,7 @@ public class Generic {
 		WebDriverManager.chromedriver().setup();
 		driver = new ChromeDriver();
 		
-		 // driver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
+		 
 		driver.get("https://mobileworld.azurewebsites.net/");
 		driver.manage().window().maximize();
 	}
