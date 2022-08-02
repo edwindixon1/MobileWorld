@@ -74,7 +74,8 @@ public class Mobile extends Generic {
    		String parentId=it.next();
    		String childId=it.next();
    		driver.switchTo().window(childId);
-   		driver.findElement(By.id("inputFirstName")).sendKeys("Scientist");//First Name
+   		driver.findElement(By.id("inputFirstName")).sendKeys("Edwin");//First Name
+   		
    		
    		
    	}
