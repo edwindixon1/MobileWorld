@@ -4,6 +4,8 @@ import java.util.Iterator;
 import java.util.Set;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.Select;
 import org.testng.annotations.Test;
 
 public class Mobile extends Generic {
@@ -68,9 +70,44 @@ public class Mobile extends Generic {
        @Test
        public void Order()
    	{
-   		
+    	driver.findElement(By.linkText("Order")).click();
+   	    Set<String>win=driver.getWindowHandles();
+   		Iterator<String>it=win.iterator(); 
+   		String parentId=it.next();
+   		String childId=it.next();
    		driver.findElement(By.id("inputFirstName")).sendKeys("Edwin");//First Name
-   		
+   		driver.findElement(By.xpath("//label[.='First Name']/following-sibling::input[1]")).sendKeys("Dixon");//Last Name
+		driver.findElement(By.id("inputEmail")).sendKeys("edwindixon1@gmail.com");//Email
+		driver.findElement(By.id("inputPassword")).sendKeys("edwin@123");//password
+		driver.findElement(By.id("flexRadioDefault1")).click();//Male
+		//driver.findElement(By.id("flexRadioDefault2")).click();//Female
+		driver.findElement(By.xpath("//input[@placeholder='00000000000']")).sendKeys("9847147279");//MOB
+		driver.findElement(By.xpath("//input[@id=' address1']")).sendKeys("kattumath house");
+		driver.findElement(By.xpath("//input[@id='address2']")).sendKeys("mannampetta");
+		driver.findElement(By.xpath("//input[@id='inputCity']")).sendKeys("thrissur");
+		WebElement web=driver.findElement(By.xpath("//select[@id='inputState']"));
+		Select dropdown=new Select(web);
+		dropdown.selectByVisibleText("Karnataka");
+		driver.findElement(By.xpath("//input[@id='inputZip']")).sendKeys("680302");
+		driver.findElement(By.xpath("//label[.='Samsung']")).click();
+		driver.findElement(By.xpath("//label[.='Apple']")).click();
+		//driver.findElement(By.xpath("//label[.='Samsung']")).click();
+		//driver.findElement(By.xpath("//label[.='Lenovo']")).click();
+		WebElement web1=driver.findElement(By.xpath("//select[@class='multi_select']"));
+		Select dropdown1=new Select(web1);
+		driver.findElement(By.xpath("//option[@id='apple'][2]")).click();
+		driver.findElement(By.xpath("//input[@placeholder='no of mobiles']")).sendKeys("1");
+		WebElement web2=driver.findElement(By.xpath("//select[@id='bought']"));
+		Select dropdown2=new Select(web2);
+		dropdown2.selectByVisibleText("Yes");
+		driver.findElement(By.xpath("//input[@id='time']")).sendKeys("2");
+		//dropdown2.selectByVisibleText("No");
+		driver.findElement(By.xpath("(//input[@id='gridCheck1'])[1]")).click();
+		driver.findElement(By.xpath("(//input[@id='gridCheck1'])[2]")).click();
+		driver.findElement(By.xpath("//button[contains(.,'Ord')]")).click();//Register  
+		driver.findElement(By.xpath("//a[contains(.,'Clo')]")).click();
+	
+	
    		
    		
    	}
