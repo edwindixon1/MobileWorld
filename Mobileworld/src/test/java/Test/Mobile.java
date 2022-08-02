@@ -65,6 +65,20 @@ public class Mobile extends Generic {
 	
        }
        
+       @Test
+       public void Order()
+   	{
+   		driver.findElement(By.linkText("Order")).click();
+   	    Set<String>win=driver.getWindowHandles();
+   		Iterator<String>it=win.iterator(); 
+   		String parentId=it.next();
+   		String childId=it.next();
+   		driver.switchTo().window(childId);
+   		driver.findElement(By.id("inputFirstName")).sendKeys("Scientist");//First Name
+   		
+   		
+   	}
+       
 
 }
 
