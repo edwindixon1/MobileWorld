@@ -1,12 +1,12 @@
 package Test;
 
-import java.time.Duration;
 import java.util.Iterator;
 import java.util.Set;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
+import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
@@ -14,7 +14,9 @@ public class Mobile extends Generic {
 
 	
 
-       @Test
+       
+
+	@Test(priority=1)
 		public void SignUp() 
 		{  
 			driver.findElement(By.xpath("//button[.='SIGN IN']")).click();
@@ -38,13 +40,13 @@ public class Mobile extends Generic {
 			
 		}
        
-       @Test
-       public void signin()
+       @Test(priority = 2, dataProvider="getdata")
+       public void signin(String email,String password)
        {
 
    		driver.findElement(By.xpath("//button[.='SIGN IN']")).click();
-   		driver.findElement(By.id("username")).sendKeys("edwindixon1@gmail.com");
-   		driver.findElement(By.id("password")).sendKeys("Edwin@!123");
+   		driver.findElement(By.id("username")).sendKeys(email);
+   		driver.findElement(By.id("password")).sendKeys(password);
    		driver.findElement(By.xpath("//a[.='Log In']")).click();
     	
        }
@@ -52,22 +54,21 @@ public class Mobile extends Generic {
        @DataProvider
        public Object[][] getdata()
    	 {
-                Object[][] data=new Object[5][2];
-                data[0][0]="";
-                data[0][1]="";
-   	        	data[1][0]="";
-   	        	data[1][1]="";
-                data[2][0]="";
-   	        	data[2][1]="";
-   	        	data[3][0]="";
-   	        	data[3][1]="";
-                data[4][0]="";
-                data[4][1]="";
+                Object[][] data=new Object[4][2];
+                data[0][0]="edwindixon1@gmail.com";
+                data[0][1]="Edwin@!123";
+   	        	data[1][0]="edwindixon1@gmail.com";
+   	        	data[1][1]="Ed";
+                data[2][0]="edwin@ghml";
+   	        	data[2][1]="Edwin@!123";
+   	        	data[3][0]="edwin@sdf";
+   	        	data[3][1]="edjj";
+                
                 return data;	
    	}
        
        
-       @Test
+       @Test(priority=5)
        public void contactus()
        {
      	  driver.findElement(By.xpath("(//a[@role='button'])[2]")).click();
@@ -86,7 +87,7 @@ public class Mobile extends Generic {
 	
        }
        
-       @Test
+       @Test(priority=4)
        public void Order()
    	{
     	driver.findElement(By.linkText("Order")).click();
@@ -132,6 +133,20 @@ public class Mobile extends Generic {
    		
    		
    	}
+       
+       @Test(priority=3)
+       public void allmobiles()
+       {
+    	   driver.findElement(By.linkText("All Mobiles")).click();
+    	   String exp="All Mobile Details";
+    	   String mob = driver.findElement(By.xpath("//b[.='All Mobile Details']")).getText();  //Titleverification
+    	   Assert.assertEquals(exp,mob);
+    	   driver.findElement(By.id("myInput")).sendKeys("lenovo k13");
+    	   driver.findElement(By.xpath("(//a[.=' Order'])[2]")).click();
+    	   
+    	   
+    	   
+       }
        
 
 }

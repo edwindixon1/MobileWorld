@@ -1,57 +1,153 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+<testng-results ignored="0" total="8" passed="8" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-08-02T18:54:08 IST" name="Default suite" finished-at="2022-08-02T18:54:30 IST" duration-ms="21256">
+  <suite started-at="2022-08-03T16:51:04 IST" name="Default suite" finished-at="2022-08-03T16:51:35 IST" duration-ms="31347">
     <groups>
     </groups>
-    <test started-at="2022-08-02T18:54:08 IST" name="Default test" finished-at="2022-08-02T18:54:30 IST" duration-ms="21256">
+    <test started-at="2022-08-03T16:51:04 IST" name="Default test" finished-at="2022-08-03T16:51:35 IST" duration-ms="31347">
       <class name="Test.Mobile">
-        <test-method is-config="true" signature="open()[pri:0, instance:Test.Mobile@53ce1329]" started-at="2022-08-02T18:54:08 IST" name="open" finished-at="2022-08-02T18:54:14 IST" duration-ms="5258" status="PASS">
+        <test-method is-config="true" signature="open()[pri:0, instance:Test.Mobile@6253c26]" started-at="2022-08-03T16:51:04 IST" name="open" finished-at="2022-08-03T16:51:08 IST" duration-ms="4256" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- open -->
-        <test-method signature="Order()[pri:0, instance:Test.Mobile@53ce1329]" started-at="2022-08-02T18:54:14 IST" name="Order" finished-at="2022-08-02T18:54:16 IST" duration-ms="2313" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Order -->
-        <test-method is-config="true" signature="close()[pri:0, instance:Test.Mobile@53ce1329]" started-at="2022-08-02T18:54:16 IST" name="close" finished-at="2022-08-02T18:54:16 IST" duration-ms="307" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- close -->
-        <test-method is-config="true" signature="open()[pri:0, instance:Test.Mobile@53ce1329]" started-at="2022-08-02T18:54:16 IST" name="open" finished-at="2022-08-02T18:54:19 IST" duration-ms="2795" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- open -->
-        <test-method signature="SignUp()[pri:0, instance:Test.Mobile@53ce1329]" started-at="2022-08-02T18:54:19 IST" name="SignUp" finished-at="2022-08-02T18:54:21 IST" duration-ms="1765" status="PASS">
+        <test-method signature="SignUp()[pri:1, instance:Test.Mobile@6253c26]" started-at="2022-08-03T16:51:08 IST" name="SignUp" finished-at="2022-08-03T16:51:10 IST" duration-ms="1409" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SignUp -->
-        <test-method is-config="true" signature="close()[pri:0, instance:Test.Mobile@53ce1329]" started-at="2022-08-02T18:54:21 IST" name="close" finished-at="2022-08-02T18:54:21 IST" duration-ms="278" status="PASS">
+        <test-method is-config="true" signature="close()[pri:0, instance:Test.Mobile@6253c26]" started-at="2022-08-03T16:51:10 IST" name="close" finished-at="2022-08-03T16:51:10 IST" duration-ms="265" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- close -->
-        <test-method is-config="true" signature="open()[pri:0, instance:Test.Mobile@53ce1329]" started-at="2022-08-02T18:54:21 IST" name="open" finished-at="2022-08-02T18:54:24 IST" duration-ms="2791" status="PASS">
+        <test-method is-config="true" signature="open()[pri:0, instance:Test.Mobile@6253c26]" started-at="2022-08-03T16:51:10 IST" name="open" finished-at="2022-08-03T16:51:13 IST" duration-ms="2408" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- open -->
-        <test-method signature="contactus()[pri:0, instance:Test.Mobile@53ce1329]" started-at="2022-08-02T18:54:24 IST" name="contactus" finished-at="2022-08-02T18:54:26 IST" duration-ms="1983" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- contactus -->
-        <test-method is-config="true" signature="close()[pri:0, instance:Test.Mobile@53ce1329]" started-at="2022-08-02T18:54:26 IST" name="close" finished-at="2022-08-02T18:54:26 IST" duration-ms="258" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- close -->
-        <test-method is-config="true" signature="open()[pri:0, instance:Test.Mobile@53ce1329]" started-at="2022-08-02T18:54:26 IST" name="open" finished-at="2022-08-02T18:54:29 IST" duration-ms="2685" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- open -->
-        <test-method signature="signin()[pri:0, instance:Test.Mobile@53ce1329]" started-at="2022-08-02T18:54:29 IST" name="signin" finished-at="2022-08-02T18:54:29 IST" duration-ms="486" status="PASS">
+        <test-method signature="signin(java.lang.String,java.lang.String)[pri:2, instance:Test.Mobile@6253c26]" started-at="2022-08-03T16:51:13 IST" name="signin" data-provider="getdata" finished-at="2022-08-03T16:51:13 IST" duration-ms="443" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edwindixon1@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Edwin@!123]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- signin -->
-        <test-method is-config="true" signature="close()[pri:0, instance:Test.Mobile@53ce1329]" started-at="2022-08-02T18:54:29 IST" name="close" finished-at="2022-08-02T18:54:29 IST" duration-ms="273" status="PASS">
+        <test-method is-config="true" signature="close()[pri:0, instance:Test.Mobile@6253c26]" started-at="2022-08-03T16:51:13 IST" name="close" finished-at="2022-08-03T16:51:13 IST" duration-ms="261" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+        <test-method is-config="true" signature="open()[pri:0, instance:Test.Mobile@6253c26]" started-at="2022-08-03T16:51:13 IST" name="open" finished-at="2022-08-03T16:51:16 IST" duration-ms="3007" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- open -->
+        <test-method signature="signin(java.lang.String,java.lang.String)[pri:2, instance:Test.Mobile@6253c26]" started-at="2022-08-03T16:51:16 IST" name="signin" data-provider="getdata" finished-at="2022-08-03T16:51:17 IST" duration-ms="433" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edwindixon1@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Ed]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- signin -->
+        <test-method is-config="true" signature="close()[pri:0, instance:Test.Mobile@6253c26]" started-at="2022-08-03T16:51:17 IST" name="close" finished-at="2022-08-03T16:51:17 IST" duration-ms="274" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+        <test-method is-config="true" signature="open()[pri:0, instance:Test.Mobile@6253c26]" started-at="2022-08-03T16:51:17 IST" name="open" finished-at="2022-08-03T16:51:19 IST" duration-ms="2418" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- open -->
+        <test-method signature="signin(java.lang.String,java.lang.String)[pri:2, instance:Test.Mobile@6253c26]" started-at="2022-08-03T16:51:19 IST" name="signin" data-provider="getdata" finished-at="2022-08-03T16:51:20 IST" duration-ms="459" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edwin@ghml]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Edwin@!123]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- signin -->
+        <test-method is-config="true" signature="close()[pri:0, instance:Test.Mobile@6253c26]" started-at="2022-08-03T16:51:20 IST" name="close" finished-at="2022-08-03T16:51:20 IST" duration-ms="273" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+        <test-method is-config="true" signature="open()[pri:0, instance:Test.Mobile@6253c26]" started-at="2022-08-03T16:51:20 IST" name="open" finished-at="2022-08-03T16:51:23 IST" duration-ms="2536" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- open -->
+        <test-method signature="signin(java.lang.String,java.lang.String)[pri:2, instance:Test.Mobile@6253c26]" started-at="2022-08-03T16:51:23 IST" name="signin" data-provider="getdata" finished-at="2022-08-03T16:51:23 IST" duration-ms="763" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edwin@sdf]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[edjj]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- signin -->
+        <test-method is-config="true" signature="close()[pri:0, instance:Test.Mobile@6253c26]" started-at="2022-08-03T16:51:23 IST" name="close" finished-at="2022-08-03T16:51:24 IST" duration-ms="242" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+        <test-method is-config="true" signature="open()[pri:0, instance:Test.Mobile@6253c26]" started-at="2022-08-03T16:51:24 IST" name="open" finished-at="2022-08-03T16:51:26 IST" duration-ms="2447" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- open -->
+        <test-method signature="allmobiles()[pri:3, instance:Test.Mobile@6253c26]" started-at="2022-08-03T16:51:26 IST" name="allmobiles" finished-at="2022-08-03T16:51:27 IST" duration-ms="609" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- allmobiles -->
+        <test-method is-config="true" signature="close()[pri:0, instance:Test.Mobile@6253c26]" started-at="2022-08-03T16:51:27 IST" name="close" finished-at="2022-08-03T16:51:27 IST" duration-ms="281" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+        <test-method is-config="true" signature="open()[pri:0, instance:Test.Mobile@6253c26]" started-at="2022-08-03T16:51:27 IST" name="open" finished-at="2022-08-03T16:51:29 IST" duration-ms="2369" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- open -->
+        <test-method signature="Order()[pri:4, instance:Test.Mobile@6253c26]" started-at="2022-08-03T16:51:29 IST" name="Order" finished-at="2022-08-03T16:51:31 IST" duration-ms="1508" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Order -->
+        <test-method is-config="true" signature="close()[pri:0, instance:Test.Mobile@6253c26]" started-at="2022-08-03T16:51:31 IST" name="close" finished-at="2022-08-03T16:51:31 IST" duration-ms="248" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+        <test-method is-config="true" signature="open()[pri:0, instance:Test.Mobile@6253c26]" started-at="2022-08-03T16:51:31 IST" name="open" finished-at="2022-08-03T16:51:33 IST" duration-ms="2331" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- open -->
+        <test-method signature="contactus()[pri:5, instance:Test.Mobile@6253c26]" started-at="2022-08-03T16:51:33 IST" name="contactus" finished-at="2022-08-03T16:51:35 IST" duration-ms="1782" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- contactus -->
+        <test-method is-config="true" signature="close()[pri:0, instance:Test.Mobile@6253c26]" started-at="2022-08-03T16:51:35 IST" name="close" finished-at="2022-08-03T16:51:35 IST" duration-ms="248" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- close -->

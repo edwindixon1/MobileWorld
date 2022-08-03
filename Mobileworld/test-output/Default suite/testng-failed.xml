@@ -6,8 +6,8 @@
       <class name="Test.Mobile">
         <methods>
           <include name="open"/>
-          <include name="Order"/>
           <include name="close"/>
+          <include name="allmobiles"/>
         </methods>
       </class> <!-- Test.Mobile -->
     </classes>
