@@ -1,17 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="3" total="7" passed="4" failed="0" skipped="0">
+<testng-results ignored="0" total="7" passed="7" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-08-03T23:20:36 IST" name="Default suite" finished-at="2022-08-03T23:20:52 IST" duration-ms="16447">
+  <suite started-at="2022-08-03T23:25:33 IST" name="Default suite" finished-at="2022-08-03T23:26:04 IST" duration-ms="30581">
     <groups>
     </groups>
-    <test started-at="2022-08-03T23:20:36 IST" name="Default test" finished-at="2022-08-03T23:20:52 IST" duration-ms="16447">
+    <test started-at="2022-08-03T23:25:33 IST" name="Default test" finished-at="2022-08-03T23:26:04 IST" duration-ms="30581">
       <class name="Test.Mobiletest">
-        <test-method is-config="true" signature="open()[pri:0, instance:Test.Mobiletest@82de64a]" started-at="2022-08-03T23:20:36 IST" name="open" finished-at="2022-08-03T23:20:41 IST" duration-ms="4633" status="PASS">
+        <test-method is-config="true" signature="open()[pri:0, instance:Test.Mobiletest@12aba8be]" started-at="2022-08-03T23:25:34 IST" name="open" finished-at="2022-08-03T23:25:38 IST" duration-ms="4531" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- open -->
-        <test-method signature="testlogin(java.lang.String,java.lang.String)[pri:2, instance:Test.Mobiletest@82de64a]" started-at="2022-08-03T23:20:41 IST" name="testlogin" data-provider="getdata" finished-at="2022-08-03T23:20:41 IST" duration-ms="653" status="PASS">
+        <test-method signature="testsignup()[pri:1, instance:Test.Mobiletest@12aba8be]" started-at="2022-08-03T23:25:38 IST" name="testsignup" finished-at="2022-08-03T23:25:40 IST" duration-ms="1657" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testsignup -->
+        <test-method is-config="true" signature="close()[pri:0, instance:Test.Mobiletest@12aba8be]" started-at="2022-08-03T23:25:40 IST" name="close" finished-at="2022-08-03T23:25:40 IST" duration-ms="269" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+        <test-method is-config="true" signature="open()[pri:0, instance:Test.Mobiletest@12aba8be]" started-at="2022-08-03T23:25:40 IST" name="open" finished-at="2022-08-03T23:25:43 IST" duration-ms="2916" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- open -->
+        <test-method signature="testlogin(java.lang.String,java.lang.String)[pri:2, instance:Test.Mobiletest@12aba8be]" started-at="2022-08-03T23:25:43 IST" name="testlogin" data-provider="getdata" finished-at="2022-08-03T23:25:44 IST" duration-ms="640" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -27,15 +39,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testlogin -->
-        <test-method is-config="true" signature="close()[pri:0, instance:Test.Mobiletest@82de64a]" started-at="2022-08-03T23:20:41 IST" name="close" finished-at="2022-08-03T23:20:41 IST" duration-ms="252" status="PASS">
+        <test-method is-config="true" signature="close()[pri:0, instance:Test.Mobiletest@12aba8be]" started-at="2022-08-03T23:25:44 IST" name="close" finished-at="2022-08-03T23:25:44 IST" duration-ms="250" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- close -->
-        <test-method is-config="true" signature="open()[pri:0, instance:Test.Mobiletest@82de64a]" started-at="2022-08-03T23:20:41 IST" name="open" finished-at="2022-08-03T23:20:44 IST" duration-ms="2782" status="PASS">
+        <test-method is-config="true" signature="open()[pri:0, instance:Test.Mobiletest@12aba8be]" started-at="2022-08-03T23:25:44 IST" name="open" finished-at="2022-08-03T23:25:47 IST" duration-ms="2769" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- open -->
-        <test-method signature="testlogin(java.lang.String,java.lang.String)[pri:2, instance:Test.Mobiletest@82de64a]" started-at="2022-08-03T23:20:44 IST" name="testlogin" data-provider="getdata" finished-at="2022-08-03T23:20:45 IST" duration-ms="612" status="PASS">
+        <test-method signature="testlogin(java.lang.String,java.lang.String)[pri:2, instance:Test.Mobiletest@12aba8be]" started-at="2022-08-03T23:25:47 IST" name="testlogin" data-provider="getdata" finished-at="2022-08-03T23:25:47 IST" duration-ms="583" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -51,15 +63,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testlogin -->
-        <test-method is-config="true" signature="close()[pri:0, instance:Test.Mobiletest@82de64a]" started-at="2022-08-03T23:20:45 IST" name="close" finished-at="2022-08-03T23:20:45 IST" duration-ms="244" status="PASS">
+        <test-method is-config="true" signature="close()[pri:0, instance:Test.Mobiletest@12aba8be]" started-at="2022-08-03T23:25:47 IST" name="close" finished-at="2022-08-03T23:25:47 IST" duration-ms="248" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- close -->
-        <test-method is-config="true" signature="open()[pri:0, instance:Test.Mobiletest@82de64a]" started-at="2022-08-03T23:20:45 IST" name="open" finished-at="2022-08-03T23:20:48 IST" duration-ms="2641" status="PASS">
+        <test-method is-config="true" signature="open()[pri:0, instance:Test.Mobiletest@12aba8be]" started-at="2022-08-03T23:25:47 IST" name="open" finished-at="2022-08-03T23:25:50 IST" duration-ms="2721" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- open -->
-        <test-method signature="testlogin(java.lang.String,java.lang.String)[pri:2, instance:Test.Mobiletest@82de64a]" started-at="2022-08-03T23:20:48 IST" name="testlogin" data-provider="getdata" finished-at="2022-08-03T23:20:48 IST" duration-ms="627" status="PASS">
+        <test-method signature="testlogin(java.lang.String,java.lang.String)[pri:2, instance:Test.Mobiletest@12aba8be]" started-at="2022-08-03T23:25:50 IST" name="testlogin" data-provider="getdata" finished-at="2022-08-03T23:25:51 IST" duration-ms="591" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -75,15 +87,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testlogin -->
-        <test-method is-config="true" signature="close()[pri:0, instance:Test.Mobiletest@82de64a]" started-at="2022-08-03T23:20:48 IST" name="close" finished-at="2022-08-03T23:20:49 IST" duration-ms="241" status="PASS">
+        <test-method is-config="true" signature="close()[pri:0, instance:Test.Mobiletest@12aba8be]" started-at="2022-08-03T23:25:51 IST" name="close" finished-at="2022-08-03T23:25:51 IST" duration-ms="242" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- close -->
-        <test-method is-config="true" signature="open()[pri:0, instance:Test.Mobiletest@82de64a]" started-at="2022-08-03T23:20:49 IST" name="open" finished-at="2022-08-03T23:20:51 IST" duration-ms="2807" status="PASS">
+        <test-method is-config="true" signature="open()[pri:0, instance:Test.Mobiletest@12aba8be]" started-at="2022-08-03T23:25:51 IST" name="open" finished-at="2022-08-03T23:25:54 IST" duration-ms="2681" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- open -->
-        <test-method signature="testlogin(java.lang.String,java.lang.String)[pri:2, instance:Test.Mobiletest@82de64a]" started-at="2022-08-03T23:20:51 IST" name="testlogin" data-provider="getdata" finished-at="2022-08-03T23:20:52 IST" duration-ms="636" status="PASS">
+        <test-method signature="testlogin(java.lang.String,java.lang.String)[pri:2, instance:Test.Mobiletest@12aba8be]" started-at="2022-08-03T23:25:54 IST" name="testlogin" data-provider="getdata" finished-at="2022-08-03T23:25:54 IST" duration-ms="732" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -99,7 +111,31 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testlogin -->
-        <test-method is-config="true" signature="close()[pri:0, instance:Test.Mobiletest@82de64a]" started-at="2022-08-03T23:20:52 IST" name="close" finished-at="2022-08-03T23:20:52 IST" duration-ms="250" status="PASS">
+        <test-method is-config="true" signature="close()[pri:0, instance:Test.Mobiletest@12aba8be]" started-at="2022-08-03T23:25:54 IST" name="close" finished-at="2022-08-03T23:25:55 IST" duration-ms="242" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+        <test-method is-config="true" signature="open()[pri:0, instance:Test.Mobiletest@12aba8be]" started-at="2022-08-03T23:25:55 IST" name="open" finished-at="2022-08-03T23:25:57 IST" duration-ms="2717" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- open -->
+        <test-method signature="order()[pri:3, instance:Test.Mobiletest@12aba8be]" started-at="2022-08-03T23:25:57 IST" name="order" finished-at="2022-08-03T23:25:59 IST" duration-ms="1582" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- order -->
+        <test-method is-config="true" signature="close()[pri:0, instance:Test.Mobiletest@12aba8be]" started-at="2022-08-03T23:25:59 IST" name="close" finished-at="2022-08-03T23:25:59 IST" duration-ms="261" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+        <test-method is-config="true" signature="open()[pri:0, instance:Test.Mobiletest@12aba8be]" started-at="2022-08-03T23:25:59 IST" name="open" finished-at="2022-08-03T23:26:02 IST" duration-ms="2574" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- open -->
+        <test-method signature="contactus()[pri:4, instance:Test.Mobiletest@12aba8be]" started-at="2022-08-03T23:26:02 IST" name="contactus" finished-at="2022-08-03T23:26:04 IST" duration-ms="2028" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- contactus -->
+        <test-method is-config="true" signature="close()[pri:0, instance:Test.Mobiletest@12aba8be]" started-at="2022-08-03T23:26:04 IST" name="close" finished-at="2022-08-03T23:26:04 IST" duration-ms="271" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- close -->
