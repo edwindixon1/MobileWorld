@@ -1,11 +1,13 @@
 package Test;
 
+import java.time.Duration;
 import java.util.Iterator;
 import java.util.Set;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
+import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 public class Mobile extends Generic {
@@ -13,7 +15,7 @@ public class Mobile extends Generic {
 	
 
        @Test
-		public void SignUp() throws InterruptedException
+		public void SignUp() 
 		{  
 			driver.findElement(By.xpath("//button[.='SIGN IN']")).click();
 			driver.findElement(By.xpath("//a[.='Sign up']")).click();
@@ -46,7 +48,24 @@ public class Mobile extends Generic {
    		driver.findElement(By.xpath("//a[.='Log In']")).click();
     	
        }
-       
+     /*  
+       @DataProvider
+       public Object[][] getdata()
+   	 {
+                Object[][] data=new Object[5][2];
+                data[0][0]="";
+                data[0][1]="";
+   	        	data[1][0]="";
+   	        	data[1][1]="";
+                data[2][0]="";
+   	        	data[2][1]="";
+   	        	data[3][0]="";
+   	        	data[3][1]="";
+                data[4][0]="";
+                data[4][1]="";
+                return data;	
+   	}
+       */
        
        @Test
        public void contactus()
@@ -71,12 +90,14 @@ public class Mobile extends Generic {
        public void Order()
    	{
     	driver.findElement(By.linkText("Order")).click();
+    	// driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
    	    Set<String>win=driver.getWindowHandles();
    		Iterator<String>it=win.iterator(); 
    		String parentId=it.next();
    		String childId=it.next();
-   		driver.findElement(By.id("inputFirstName")).sendKeys("Edwin");//First Name
-   		driver.findElement(By.xpath("//label[.='First Name']/following-sibling::input[1]")).sendKeys("Dixon");//Last Name
+   		driver.switchTo().window(childId);
+   		driver.findElement(By.xpath("(//input[@id='inputFirstName'])[1]")).sendKeys("Edwin");//First Name
+   		driver.findElement(By.xpath("(//input[@id='inputFirstName'])[2]")).sendKeys("Dixon");//Last Name
 		driver.findElement(By.id("inputEmail")).sendKeys("edwindixon1@gmail.com");//Email
 		driver.findElement(By.id("inputPassword")).sendKeys("edwin@123");//password
 		driver.findElement(By.id("flexRadioDefault1")).click();//Male
@@ -105,7 +126,7 @@ public class Mobile extends Generic {
 		driver.findElement(By.xpath("(//input[@id='gridCheck1'])[1]")).click();
 		driver.findElement(By.xpath("(//input[@id='gridCheck1'])[2]")).click();
 		driver.findElement(By.xpath("//button[contains(.,'Ord')]")).click();//Register  
-		driver.findElement(By.xpath("//a[contains(.,'Clo')]")).click();
+		
 	
 	
    		
