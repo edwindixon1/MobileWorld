@@ -26,8 +26,8 @@ public class Mobile extends Generic {
 			driver.findElement(By.xpath("//input[@type='Email']")).sendKeys("edwindixon1@gmail.com");//Email
 			driver.findElement(By.xpath("//input[@type='Password']")).sendKeys("Edwin@!123");//password
 			driver.findElement(By.xpath("//input[@type='date']")).sendKeys("14-06-1997");//DOB
-			driver.findElement(By.xpath("//label[.='Male']/../input[1]")).click();//Male
-			//driver.findElement(By.xpath("//label[.='Female']/following-sibling::input")).click();//Female
+			driver.findElement(By.xpath("(//input[@name='gender'])[1]")).click();//Male
+			//driver.findElement(By.xpath("(//input[@name='gender'])[2]")).click();//Female
 			driver.findElement(By.xpath("//input[@type='number']")).sendKeys("9847147279");//MOB
 			driver.findElement(By.xpath("//textarea[@placeholder='Short Bio']")).sendKeys("Hello Edwin Dixon");//BIO
 			driver.findElement(By.xpath("//button[@type='submit']")).click();//Register
@@ -91,7 +91,7 @@ public class Mobile extends Generic {
        public void Order()
    	{
     	driver.findElement(By.linkText("Order")).click();
-    	// driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
+    	
    	    Set<String>win=driver.getWindowHandles();
    		Iterator<String>it=win.iterator(); 
    		String parentId=it.next();
@@ -111,7 +111,7 @@ public class Mobile extends Generic {
 		Select dropdown=new Select(web);
 		dropdown.selectByVisibleText("Karnataka");
 		driver.findElement(By.xpath("//input[@id='inputZip']")).sendKeys("680302");
-		driver.findElement(By.xpath("//label[.='Samsung']")).click();
+		//driver.findElement(By.xpath("//label[.='Samsung']")).click();
 		driver.findElement(By.xpath("//label[.='Apple']")).click();
 		//driver.findElement(By.xpath("//label[.='Samsung']")).click();
 		//driver.findElement(By.xpath("//label[.='Lenovo']")).click();
