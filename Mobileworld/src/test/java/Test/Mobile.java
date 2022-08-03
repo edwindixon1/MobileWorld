@@ -48,7 +48,7 @@ public class Mobile extends Generic {
    		driver.findElement(By.xpath("//a[.='Log In']")).click();
     	
        }
-     /*  
+       
        @DataProvider
        public Object[][] getdata()
    	 {
@@ -65,7 +65,7 @@ public class Mobile extends Generic {
                 data[4][1]="";
                 return data;	
    	}
-       */
+       
        
        @Test
        public void contactus()
